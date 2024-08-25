@@ -1,87 +1,145 @@
-body{
-    background-image: url(../img/bg01.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
+.body {
+  background-image: url(../img/bg01.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
 .full-height {
-    background: rgba(26, 26, 26, 0.548);
-    background-attachment: fixed;
-    max-height: 100vh;
-    height: 100vh;
-
-
-}
-table{
-    width: 100%;
-    padding-top: 5px;
-    
-}
-.heading-text{
-    color: white;
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 63px;
-    margin-top: 15%;
-    text-align: center;
-    margin-bottom: 0;
+  padding-top: 20px;
+  background: rgba(26, 26, 26, 0.548);
+  background-attachment: fixed;
+  max-height: 100vh;
+  height: 100vh;
 }
 
-.sub-text2{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 17px;
-    line-height: 27px;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 0;
+table {
+  width: 100%;
+  padding-top: 5px;
+}
+.heading-text {
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 63px;
+  margin-top: 15%;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-
-.register-btn{
-    background-color: rgba(240, 248, 255, 0.589);
-    color: #345cc4;
+.sub-text2 {
+  color: rgba(237, 232, 232, 0.5);
+  font-size: 17px;
+  line-height: 27px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
 }
 
-
-.edoc-logo{
-    color: white;
-    font-weight: bolder;
-    font-size: 20px;
-    padding-left: 20px;
-    animation: transitionIn-Y-over 0.5s;
+.register-btn {
+  background-color: rgba(240, 248, 255, 0.589);
+  color: #345cc4;
 }
 
-.edoc-logo-sub{
-    color: rgba(255, 255, 255, 0.733);
-    font-size: 12px;
-
+.edoc-logo {
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  padding-left: 20px;
+  animation: transitionIn-Y-over 0.5s;
 }
 
-
-.nav-item{
-    color: rgba(255, 255, 255, 0.671);
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-    animation: transitionIn-Y-over 0.5s;
+.edoc-logo-sub {
+  color: rgba(255, 255, 255, 0.733);
+  font-size: 12px;
 }
 
-.nav-item:hover{
-    color: #f0f0f0;
-
+.nav-item {
+  color: rgba(255, 255, 255, 0.671);
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  animation: transitionIn-Y-over 0.5s;
 }
 
-.footer-hashen{
+.nav-item:hover {
+  color: #f0f0f0;
+}
+
+.footer-hashen {
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  font-size: 13px;
+  animation: transitionIn-Y-over 0.5s;
+}
+
+.btn-custom {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.nav-item {
+  padding: 0.5rem 0xp;
+}
+
+.dropdown-hover:hover > .dropdown-menu {
+  display: inline-block;
+}
+
+.dropdown-hover > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+@media (min-width: 992px) {
+  /* lg breakpoint */
+  #dropdownMenu {
+    position: relative;
+  }
+  #drop {
     position: absolute;
-    bottom: 0;
-    left: 45%;
-    font-size: 13px;
-    animation: transitionIn-Y-over 0.5s;
+    top: 80%;
+    left: 40%;
+  }
+}
+/* Ensure the dropdown menu is hidden by default */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Optional: Add some transition effects */
+.dropdown-menu {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+}
+.nav-link.btn-appointment {
+  display: inline-block;
+  border-radius: 5px;
+  border: 2px solid #fc5185;
+  background-color: #fc5185;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.nav-link.btn-appointment:hover,
+.nav-link.btn-appointment:focus {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
